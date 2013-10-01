@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Favorite Book Recipes</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<link rel="stylesheet" type="text/css" href="http://getbootstrap.com/assets/css/docs.css">
+<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">
+
+<script data-main="backbone/main.js" src="backbone/imports/r.js"></script>
+
+</head>
+<body>
+<h3>Your Favorite Book Recipes</h3>
+<div class="table-responsive">
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>Page</th>
+            <th>Title</th>
+            <th>Rating</th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</div>
+
+<div class="btn-group">
+    <button type="button" id="refresh_recipes" alt="refresh recipes" class="btn btn-default"><span class="glyphicon glyphicon-repeat"></span></button>
+    <button type="button" id="add_recipe" alt="add recipe" class="btn btn-default"><span class="glyphicon glyphicon-plus-sign"></span></button>
+</div>
+
+<a class="halflings plus" data-utf="002B" data-prefix="halflings" data-type="" data-name="plus" href=""></a>
+
+
+<!-- Modal -->
+<div class="modal fade" id="realModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content"  role="form">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Edit Recipe</h4>
+            </div>
+            <div class="modal-body">
+                <!--template section-->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary" id="submit_form">Save changes</button>
+                <button type="button" id="delete_btn" data-html="true" data-content="the item will be deleted permanently!" data-placement="auto" data-toggle="popover" data-container="body" class="btn btn-primary">Delete</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+</body>
+</html>

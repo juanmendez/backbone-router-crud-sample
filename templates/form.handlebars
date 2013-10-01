@@ -1,0 +1,14 @@
+<!--form.handlebars-->
+<div class="form-group">
+    <label for="recipeTitle">Title</label>
+    <input type="text" value="{{title}}" class="form-control" id="recipeTitle" placeholder="Enter Title">
+    <input type="text" value="{{id}}" id="recipeID" hidden="true">
+</div>
+<div class="form-group">
+    <label for="recipePage">page</label>
+    <input type="number"  value="{{page}}"  min="0" class="form-control" id="recipePage" placeholder="Enter Page">
+</div>
+<div class="form-group">
+    <label for="recipeRating">rating [0-5]</label>
+    <input type="number"  value="{{rating}}" min="0" max="5" class="form-control" id="recipeRating" placeholder="Enter Rating">
+</div>
