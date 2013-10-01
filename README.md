@@ -21,9 +21,9 @@ in PHP file_get_contents("php://input", 'r' ) from server_side/collection.php li
 if you test it in my live example. I hope I can figure it out but I wasn't going to let this wait longer to be available on github.
 My localhost didn't face the same issue and it was my primary location.
 
-An explanation what each main directory mean:
+An explanation what each main directory mean:\n\n
 
---backbone (contains javascript files. I used requirejs to put the client-side together. )
---server_side (contains php files, and an sql file to quickly import into your mysql server ) 
+--backbone (contains javascript files. I used requirejs to put the client-side together. )\n
+--server_side (contains php files, and an sql file to quickly import into your mysql server )\n 
 --templates (contains the templates for the application and javascript generated handlebars-template file )
 index.html (the single page application file )
